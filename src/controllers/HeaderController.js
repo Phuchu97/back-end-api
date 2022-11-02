@@ -1,9 +1,7 @@
-
 class HeaderController {
-    
-    headerhome(req, res) { 
-        res.render('home')
-    }
+  headerhome(req, res) {
+    res.render('home');
+  }
 }
 
-module.exports = new HeaderController;
+module.exports = new HeaderController();
