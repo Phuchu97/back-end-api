@@ -1,3 +1,4 @@
+// const connection = require('./config/db/connectDBxam')
 const express = require('express');
 const hbs = require('express-handlebars');
 const app = express();
@@ -8,6 +9,7 @@ const db = require('./config/db/index')
 
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, 'public/img')));
+
 app.engine(
   'hbs',
   hbs.engine({
@@ -16,7 +18,6 @@ app.engine(
 );
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'recourse', 'views'));
-db.ConnectDb();
 route(app);
 
-app.listen(3000);
+app.listen(8000);

@@ -9,4 +9,4 @@ const Films = new Schema({
     dateAdd: {type: Date, default: Date.now}
 })
 
-module.exports = mongoose.model('film', Films)
+module.exports = mongoose.model('film_lists', Films)
